@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="sample.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.dbeppler.shitboard.Controller">
+    <children>
+        <HBox>
+            <children>
+                <Button id="settings-button" mnemonicParsing="false" onAction="#settingsButtonPressed" prefHeight="25.0" prefWidth="25.0" />
+            </children>
+            <padding>
+                <Insets left="8.0" right="8.0" top="8.0" />
+            </padding>
+        </HBox>
+        <FlowPane id="btnContainer" fx:id="fpBtnContainer" hgap="8.0" prefWidth="204.0" vgap="8.0">
+            <children>
+                <Button id="btn0" fx:id="btn0" mnemonicParsing="false" styleClass="board-button" text="Folgt">
+                    <contextMenu>
+                        <ContextMenu id="ctxMn0">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetNamePressed" text="Set Name..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetIconPressed" text="Set Icon..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetHotkeyPressed" text="Set Hotkey..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetTextPressed" text="Text Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImagePressed" text="Image Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImageTextPressed" text="Text &amp; Image Tweet..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuAllImageFolderPressed" text="All Images from Folder..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuRandomImageFolderPressed" text="Random Image from Folder..." />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </Button>
+                <Button id="btn1" fx:id="btn1" mnemonicParsing="false" styleClass="board-button" text="Alles">
+                    <contextMenu>
+                        <ContextMenu id="ctxMn1">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetNamePressed" text="Set Name..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetIconPressed" text="Set Icon..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetHotkeyPressed" text="Set Hotkey..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetTextPressed" text="Text Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImagePressed" text="Image Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImageTextPressed" text="Text &amp; Image Tweet..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuAllImageFolderPressed" text="All Images from Folder..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuRandomImageFolderPressed" text="Random Image from Folder..." />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </Button>
+                <Button id="btn2" fx:id="btn2" mnemonicParsing="false" styleClass="board-button" text="Fakten">
+                    <contextMenu>
+                        <ContextMenu id="ctxMn2">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetNamePressed" text="Set Name..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetIconPressed" text="Set Icon..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetHotkeyPressed" text="Set Hotkey..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetTextPressed" text="Text Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImagePressed" text="Image Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImageTextPressed" text="Text &amp; Image Tweet..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuAllImageFolderPressed" text="All Images from Folder..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuRandomImageFolderPressed" text="Random Image from Folder..." />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </Button>
+                <Button id="btn3" fx:id="btn3" mnemonicParsing="false" styleClass="board-button" text="FUN">
+                    <contextMenu>
+                        <ContextMenu id="ctxMn3">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetNamePressed" text="Set Name..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetIconPressed" text="Set Icon..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetHotkeyPressed" text="Set Hotkey..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetTextPressed" text="Text Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImagePressed" text="Image Tweet..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuSetImageTextPressed" text="Text \&amp; Image Tweet..." />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" onAction="#menuAllImageFolderPressed" text="All Images from Folder..." />
+                                <MenuItem mnemonicParsing="false" onAction="#menuRandomImageFolderPressed" text="Random Image from Folder..." />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </FlowPane>
+    </children>
+</VBox>

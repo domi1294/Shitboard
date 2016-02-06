@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<Button id="btn" mnemonicParsing="false" styleClass="board-button" text="" stylesheets="sample.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.dbeppler.shitboard.Controller">
+    <contextMenu>
+        <ContextMenu id="ctxMn">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#menuSetNamePressed" text="Set Name..." />
+                <MenuItem mnemonicParsing="false" onAction="#menuSetIconPressed" text="Set Icon..." />
+                <MenuItem mnemonicParsing="false" onAction="#menuSetHotkeyPressed" text="Set Hotkey..." />
+                <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" onAction="#menuSetTextPressed" text="Text Tweet..." />
+                <MenuItem mnemonicParsing="false" onAction="#menuSetImagePressed" text="Image Tweet..." />
+                <MenuItem mnemonicParsing="false" onAction="#menuSetImageTextPressed" text="Text &amp; Image Tweet..." />
+                <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" onAction="#menuAllImageFolderPressed" text="All Images from Folder..." />
+                <MenuItem mnemonicParsing="false" onAction="#menuRandomImageFolderPressed" text="Random Image from Folder..." />
+            </items>
+        </ContextMenu>
+    </contextMenu>
+</Button>

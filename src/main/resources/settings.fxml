@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane minHeight="200.0" minWidth="200.0" prefHeight="229.0" prefWidth="214.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.dbeppler.shitboard.SettingsController">
+  <tabs>
+    <Tab text="Buttons">
+         <content>
+            <VBox>
+               <children>
+                  <Label text="Number of Buttons">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" spacing="8.0">
+                     <children>
+                        <Slider fx:id="sldButtonCount" blockIncrement="1.0" majorTickUnit="1.0" minorTickCount="1" snapToTicks="true" value="4.0" HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="txtButtonCount" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" text="4" HBox.hgrow="NEVER" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Label text="Button Width">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" spacing="8.0">
+                     <children>
+                        <Slider fx:id="sldButtonWidth" max="300.0" min="40.0" minorTickCount="5" value="90.0" HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="txtButtonWidth" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" text="90" HBox.hgrow="NEVER" />
+                     </children>
+                  </HBox>
+                  <Label text="Button Height">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" spacing="8.0">
+                     <children>
+                        <Slider fx:id="sldButtonHeight" max="200.0" min="25.0" minorTickCount="5" value="40.0" HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="txtButtonHeight" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" text="40" HBox.hgrow="NEVER" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="8.0" right="8.0" />
+               </padding>
+            </VBox>
+         </content>
+    </Tab>
+    <Tab text="Other">
+         <content>
+            <VBox spacing="5.0">
+               <children>
+                  <Label fx:id="lblLoggedInAs" text="Currently logged in as" wrapText="true" />
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#logoutPressed" text="Logout" />
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
