@@ -119,40 +119,6 @@ public class Controller {
 		settingsStage.show();
 	}
 
-	/*@FXML
-	public void menuButtonPressed(ActionEvent evt) {
-		System.out.println(((MenuItem) evt.getSource()).getStyleClass().get(1));
-		switch (((MenuItem) evt.getSource()).getStyleClass().get(1)) {
-			case "set-name":
-				menuSetNamePressed(evt);
-				break;
-			case "set-icon":
-				menuSetIconPressed(evt);
-				break;
-			case "set-hotkey":
-				menuSetHotkeyPressed(evt);
-				break;
-			case "set-text":
-				menuSetTextPressed(evt);
-				break;
-			case "set-image":
-				menuSetImagePressed(evt);
-				break;
-			case "set-image-text":
-				menuSetImageTextPressed(evt);
-				break;
-			case "all-image-folder":
-				menuAllImageFolderPressed(evt);
-				break;
-			case "random-image-folder":
-				menuRandomImageFolderPressed(evt);
-				break;
-		}
-		System.out.println(evt.getSource());
-		System.out.println(((MenuItem) evt.getSource()).getParentPopup());
-		System.out.println(((MenuItem) evt.getSource()).getParentPopup().getId());
-	}*/
-
 	@FXML
 	public void menuSetNamePressed(ActionEvent evt) {
 		char id = ((MenuItem) evt.getSource()).getParentPopup().getId().charAt(5);
@@ -340,7 +306,7 @@ public class Controller {
 	}
 
 	private void tweetImage(File image) {
-		tweetImage(image, "-fx-pref-width: 90px;");
+		tweetImage(image, "");
 	}
 
 	private void tweetImage(File image, String text) {
